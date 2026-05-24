@@ -3,10 +3,11 @@ ini_set('display_errors', '0');
 error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE & ~E_DEPRECATED);
 
 class Database {
-    private $host = "127.0.0.1:3307";
-    private $db_name = "mock_interview";
+    private $host = "mysql.railway.internal";
+    
+    private $db_name = "railway";
     private $username = "root";
-    private $password = "";
+    private $password = "MkNvRjwbVgSYkTfCxGBcgNsPwujFxbAp";
     public $conn;
 
     public function getConnection() {
